@@ -182,10 +182,7 @@ header p {
 /* For limiting exaggerating details */
 
 @media (max-width: 768px) {
-    header {
-        height: auto; /* Allow height to adjust dynamically */
-        padding: 20px;
-      }
+    
       body {
         padding: 10px;
     }
@@ -197,8 +194,8 @@ header p {
     .aboutimg, .aboutbox {
         width: 80%;
         margin-bottom: 20px;
-    }
-
+    } 
+  }
     .projects {
         flex-direction: column;
         align-items: center;
@@ -212,7 +209,10 @@ header p {
         height: auto;
         display: block; /* Prevent inline overflow */
       }
-}
+      table {
+        max-width: 10%;
+      }
+
 
 
     /* Navigation buttons */
@@ -432,7 +432,7 @@ header p {
                     }
                   
                     .header .navbar{
-                      position: absolute;
+                      position: sticky;
                       top: 110%; right: -110%;
                       width: 30rem;
                       box-shadow: var(--box-shadow);
